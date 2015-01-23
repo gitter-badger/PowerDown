@@ -36,12 +36,16 @@ module.exports = function(app, passport) {
     });
 
     // =====================================
-    // GET PARTIALS ========================
+    // GET PROTECTED PARTIALS ==============
     // =====================================
     app.get('/partials/*', isLoggedIn, function(req, res) {
         var reqPath = path.join(__dirname, './protected/partials', req.path);
         res.sendfile(reqPath)
-    })
+    });
+
+    // =====================================
+    // GET PROTECTED JAVASCRIPT ============
+    // =====================================
     app.get('/javascript/*', isLoggedIn, function(req, res) {
         var reqPath = path.join(__dirname, './protected/javascript', req.path);
         res.sendfile(reqPath)

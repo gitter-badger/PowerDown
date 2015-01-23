@@ -3,18 +3,34 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <title>Power Down Login</title>
 
-    <title>The HTML5 Herald</title>
-    <meta name="description" content="The HTML5 Herald">
-    <meta name="author" content="SitePoint">
-
-    <link rel="stylesheet" href="css/styles.css?v=1.0">
-
-    <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+<div class="panel panel-default col-sm-4 col-sm-offset-4">
+    <div class="panel-body">
+        <form action="/login" method="post">
+            <img class="col-sm-12" src="images/logo.png">
+            <div class="form-group">
+                <label>E-Mail:</label>
+                <input type="text" class="form-control" name="username" />
+                <br/>
+            </div>
+            <div class="form-group">
+                <label>Password:</label>
+                <input type="password" class="form-control" name="password" />
+            </div>
+            <div>
+                <button class="btn" type="submit" value="Submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
 </body>
 </html>
