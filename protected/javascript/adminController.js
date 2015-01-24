@@ -6,7 +6,7 @@ pdApp.controller('adminCtrl', ['$scope', 'userFunctions', function($scope, userF
         console.log('Getting Users');
         $scope.salesreps = d;
     });
-    $scope.resetPassword = function(email password){
+    $scope.resetPassword = function(email, password){
         userFunctions.resetUserPass(email, password).then(function(){
             $state.reload()
         })
