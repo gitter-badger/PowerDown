@@ -1,14 +1,14 @@
 {
   "name": "PowerDown",
   "version": "0.0.0",
-  "web": "app.js",
+  "web": "node app.js",
   "private": true,
   "engines": {
     "node": "0.10.x"
   },
-  "scripts": {
-    "start": "node app.js"
-  },
+//  "scripts": {
+//    "start": "node app.js"
+//  },
   "dependencies": {
     "bcrypt-nodejs": "latest",
     "body-parser": "~1.10.1",
