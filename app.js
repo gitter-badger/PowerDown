@@ -3,6 +3,7 @@
 // set up ======================================================================
 // get all the tools we need
 var express  = require('express');
+var path = require('path');
 var app      = express();
 var port     = process.env.PORT || 5000;
 var mongoose = require('mongoose');
@@ -27,6 +28,8 @@ app.use(cookieParser()); // read cookies (needed for auth)
 app.use(bodyParser()); // get information from html forms
 app.use(express.static(__dirname + '/public')); // setup static directory
 
+app.set('view engine', 'ejs'); // set up ejs for templating
+
 // required for passport
 app.use(session({ secret: 'ilovescotchscotchyscotchscotch' })); // session secret
 app.use(passport.initialize());
@@ -34,7 +37,7 @@ app.use(passport.session()); // persistent login sessions
 app.use(flash()); // use connect-flash for flash messages stored in session
 
 // routes ======================================================================
-require('./routes/routes.js')(app, passport); // load our routes and pass in our app and fully configured passport
+require('./routes/routes.js')(app, passport, path); // load our routes and pass in our app and fully configured passport
 
 // launch ======================================================================
 app.listen(port);

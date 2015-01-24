@@ -14,22 +14,22 @@ pdApp.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
     $stateProvider
         .state('home', {
             url: '/',
-            templateUrl: 'protected/partials/base.html',
+            templateUrl: '/partials/base.html',
             controller: 'pdCtrl'
         })
         .state('order', {
             url: '/order',
-            templateUrl: 'protected/partials/order.demo.html',
+            templateUrl: '/partials/order.html',
             controller: 'pdCtrl'
         })
         .state('archive', {
             url: '/archive',
-            templateUrl: 'protected/partials/archive.demo.html',
+            templateUrl: '/partials/archive.html',
             controller: 'pdCtrl'
         })
         .state('admin', {
             url: '/admin',
-            templateUrl: 'protected/partials/admin.demo.html',
+            templateUrl: '/partials/admin.html',
             controller: 'pdCtrl'
         })
 });
