@@ -1,8 +1,9 @@
 var pdApp = angular.module('pdApp');
 
-pdApp.controller('pdCtrl', ['$scope', function($scope){
+pdApp.controller('pdCtrl', ['$scope', 'productList', function($scope, productList){
     console.log('invoke primary controller');
-    $scope.data = {
-        test: 'test'
-    }
+    $scope.motors = productList.getmotors();
+    $scope.antisweats = productList.getantisweat();
+    $scope.coolerleds = productList.getcoolerled();
+    $scope.ledlights = productList.getledlights();
 }]);

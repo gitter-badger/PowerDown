@@ -1,16 +1,16 @@
 var pdApp = angular.module('pdApp');
 
-pdApp.directive('navbar', [function(){
+pdApp.directive('pdnavbar', [function(){
     return {
         templateUrl: '/partials/navbar.html'
     }
 }]);
-pdApp.directive('custinfo', [function(){
+pdApp.directive('pdcustinfo', [function(){
     return {
         templateUrl: '/partials/custinfo.html'
     }
 }]);
-pdApp.directive('tabs', [function(){
+pdApp.directive('pdtabs', [function(){
     return {
         templateUrl: '/partials/tabs.html'
     }

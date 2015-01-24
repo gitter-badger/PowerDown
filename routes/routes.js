@@ -98,7 +98,7 @@ module.exports = function(app, passport, path) {
     // HANDLE DEFAULT REQUEST TO INDEX =====
     // =====================================
     app.get('/*', isLoggedIn, function(req, res) {
-
+        res.sendfile(path.resolve('./protected/index.html'));
     })
 };
 

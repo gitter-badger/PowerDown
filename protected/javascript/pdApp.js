@@ -1,6 +1,7 @@
 var pdApp = angular.module('pdApp', [
     'ui.router',
-    'ui.bootstrap'
+    'ui.bootstrap',
+    'ui.bootstrap.tpls'
 ]);
 
 pdApp.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
@@ -30,6 +31,11 @@ pdApp.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
         .state('admin', {
             url: '/admin',
             templateUrl: '/partials/admin.html',
+            controller: 'adminCtrl'
+        })
+        .state('test', {
+            url: '/test',
+            templateUrl: '/partials/base2.html',
             controller: 'pdCtrl'
         })
 });
