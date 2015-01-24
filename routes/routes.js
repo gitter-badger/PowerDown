@@ -1,4 +1,10 @@
 // routes/routes.js
+// require modules
+var userController = require('../controllers/usercontroller.js');
+var productController = require('../controllers/productcontroller.js');
+var quoteController = require('../controllers/quotecontroller.js');
+var rebateController = require('../controllers/rebatecontroller.js');
+
 module.exports = function(app, passport, path) {
 
     // =====================================
@@ -25,8 +31,28 @@ module.exports = function(app, passport, path) {
 
     // process the signup form
     app.post('/signup', passport.authenticate('local-signup', {
-        successRedirect : '/', // redirect to the index page
-        failureRedirect : '/signup', // redirect back to the signup page if there is an error
+        successRedirect : '/#/salesrep', // redirect to the login page
+        failureRedirect : '/#/salesrep', // redirect back to the signup page if there is an error
+        failureFlash : true // allow flash messages
+    }));
+
+    // =====================================
+    // ADMIN SIGNUP ========================
+    // =====================================
+    // show the signup form
+    app.get('/adminsignup', function(req, res) {
+
+        // render the page and pass in any flash data if it exists
+        res.render('signup.ejs', { message: req.flash('signupMessage') });
+
+        // render the page and pass in any flash data if it exists
+        //res.sendfile('./protected/newuser.html');
+    });
+
+    // process the signup form
+    app.post('/adminsignup', passport.authenticate('local-signup', {
+        successRedirect : '/login', // redirect to the login page
+        failureRedirect : '/adminsignup', // redirect back to the signup page if there is an error
         failureFlash : true // allow flash messages
     }));
 
@@ -90,9 +116,21 @@ module.exports = function(app, passport, path) {
     // =====================================
     // API CALLS TO DB =====================
     // =====================================
-    app.get('/api/user', isLoggedIn, function(req, res) {});
-    app.get('/api/product', isLoggedIn, function(req, res) {});
-    app.get('/api/quote', isLoggedIn, function(req, res) {});
+    app.get('/api/user', isLoggedIn, userController.getall);
+    app.put('/api/user', isLoggedIn, userController.resetpass);
+    //app.delete('/api/user', isLoggedIn, userController.deleteone);
+    app.get('/api/product', isLoggedIn, productController.getall);
+    app.put('/api/product', isLoggedIn, productController.update);
+    app.post('/api/product', isLoggedIn, productController.newproduct);
+    //app.delete('/api/product', isLoggedIn, productController.deleteproduct);
+    app.get('/api/quote', isLoggedIn, quoteController.getall);
+    app.put('/api/quote', isLoggedIn, quoteController.update);
+    app.post('/api/quote', isLoggedIn, quoteController.newquote);
+    //app.delete('/api/quote', isLoggedIn, quoteController.deletequote);
+    app.get('/api/rebate', isLoggedIn, rebateController.getall);
+    app.put('/api/rebate', isLoggedIn, rebateController.update);
+    app.post('/api/rebate', isLoggedIn, rebateController.newrebate);
+    //app.delete('/api/rebate', isLoggedIn, rebateController.deleterebate);
 
     // =====================================
     // HANDLE DEFAULT REQUEST TO INDEX =====

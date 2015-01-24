@@ -4,7 +4,10 @@ var mongoose = require('mongoose');
 
 // define the schema for our user model
 var quoteSchema = mongoose.Schema({
-    quote: []
+    quoteid: {type: String, required: true, unique: true},
+    repname: {type: String, required: true},
+    email: {type: String, required: true},
+    customer: {type: String, required: true}
 });
 
 // methods ======================

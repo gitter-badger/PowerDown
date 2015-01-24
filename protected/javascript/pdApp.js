@@ -33,33 +33,33 @@ pdApp.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
             templateUrl: '/partials/admin.html',
             controller: 'adminCtrl'
         })
-        .state('admin.products', {
-            url: '/admin/products',
+        .state('products', {
+            url: '/products',
             templateUrl: '/partials/admin/products.html',
             controller: 'adminCtrl'
         })
-        .state('admin.pricing', {
-            url: '/admin/pricing',
+        .state('pricing', {
+            url: '/pricing',
             templateUrl: '/partials/admin/pricing.html',
             controller: 'adminCtrl'
         })
-        .state('admin.quotes', {
-            url: '/admin/quotes',
+        .state('quotes', {
+            url: '/quotes',
             templateUrl: '/partials/admin/quotes.html',
             controller: 'adminCtrl'
         })
-        .state('admin.salesrep', {
-            url: '/admin/salesrep',
+        .state('salesrep', {
+            url: '/salesrep',
             templateUrl: '/partials/admin/salesrep.html',
             controller: 'adminCtrl'
         })
-        .state('admin.rebate', {
-            url: '/admin/rebate',
+        .state('rebate', {
+            url: '/rebate',
             templateUrl: '/partials/admin/rebate.html',
             controller: 'adminCtrl'
         })
-        .state('admin.powerco', {
-            url: '/admin/powerco',
+        .state('powerco', {
+            url: '/powerco',
             templateUrl: '/partials/admin/powerco.html',
             controller: 'adminCtrl'
         })

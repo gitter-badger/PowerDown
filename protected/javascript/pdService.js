@@ -68,3 +68,16 @@ pdApp.service('productList', [function(){
         ]
     }
 }]);
+pdApp.service('userFunctions', ['$http', function($http){
+    this.getUsers = function(){
+        console.log('Getting users from service');
+        var promise = $http.get('/api/user').then(function(response){
+            console.log(response);
+            return response.data;
+        });
+        return promise;
+    };
+    this.resetUserPass = function(){
+        console.log('Reset Password')
+    }
+}]);
