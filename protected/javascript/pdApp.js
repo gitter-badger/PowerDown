@@ -6,7 +6,7 @@ var pdApp = angular.module('pdApp', [
 
 pdApp.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
     // set for HTML5 mode
-    $locationProvider.html5Mode(true);
+    //$locationProvider.html5Mode(true);
 
     // unmatched url redirect to /
     $urlRouterProvider.otherwise('/');

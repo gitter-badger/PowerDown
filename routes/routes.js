@@ -97,9 +97,9 @@ module.exports = function(app, passport, path) {
     // =====================================
     // HANDLE DEFAULT REQUEST TO INDEX =====
     // =====================================
-    app.get('/*', isLoggedIn, function(req, res) {
-        res.sendfile(path.resolve('./protected/index.html'));
-    })
+    //app.get('/*', isLoggedIn, function(req, res) {
+    //    res.sendfile(path.resolve('./protected/index.html'));
+    //})
 };
 
 // route middleware to make sure a user is logged in
