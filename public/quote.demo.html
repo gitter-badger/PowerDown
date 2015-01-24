@@ -1,0 +1,371 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Power Down Quote</title>
+
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Power Down</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="#">Order</a></li>
+                <li><a href="#">Quotes</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="admin.demo.html">Admin</a></li>
+                <li><a href="/logout">Logout</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<div class="container-fluid" style="margin-top: 70px">
+    <div class="row">
+        <div class="col-sm-4">
+            <img src="images/logo.png" width="50%">
+        </div>
+        <div class="col-sm-4">
+            <b>Power Down, LLC</b><br />
+            821 Mountain Ave<br />
+            Fort Collins, Colorado<br />
+            (P) 970.219.3546<br />
+            (F) 970.225.9235<br />
+        </div>
+        <div class="col-sm-4">
+            <span style="font-size: 2em"><b>QUOTE</b></span><br />
+            Quote Number: 65161651<br />
+            Quote Date: 1/20/14
+        </div>
+    </div>
+
+    <div class="container-fluid" style="margin-top: 25px">
+        <div><h3>Customer Information</h3></div>
+        <div class="panel panel-default" style="margin-top: 25px">
+            <div class="panel-heading container-fluid">
+                <span class="col-sm-6">Billing Address</span>
+                <span class="col-sm-6">Shipping Address</span>
+            </div>
+            <div class="panel-body">
+                <form class="form-horizontal col-sm-6">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Company Name</label>
+                        <div class="col-sm-10">
+                            <input class="form-control" type="text" placeholder="Company Name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Name</label>
+                        <div class="col-sm-10">
+                            <input class="form-control" type="text" placeholder="Name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Address</label>
+                        <div class="col-sm-10">
+                            <input class="form-control" type="text" placeholder="Address 1">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-10 col-sm-offset-2">
+                            <input class="form-control" type="text" placeholder="Address 2">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">City/State/Zip</label>
+                        <div class="col-sm-10">
+                            <input class="form-control" type="text" placeholder="City/State/Zip">
+                        </div>
+                    </div>
+                </form>
+                <form class="form-horizontal col-sm-6">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Company Name</label>
+                        <div class="col-sm-10">
+                            <input class="form-control" type="text" placeholder="Company Name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Name</label>
+                        <div class="col-sm-10">
+                            <input class="form-control" type="text" placeholder="Name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Address</label>
+                        <div class="col-sm-10">
+                            <input class="form-control" type="text" placeholder="Address 1">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-10 col-sm-offset-2">
+                            <input class="form-control" type="text" placeholder="Address 2">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">City/State/Zip</label>
+                        <div class="col-sm-10">
+                            <input class="form-control" type="text" placeholder="City/State/Zip">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" style="margin-top: 25px">
+        <div><h3>Order Information</h3></div>
+        <div class="panel panel-default" style="margin-top: 25px">
+            <div class="panel-heading container-fluid">
+                <span class="col-sm-2">Quantity</span>
+                <span class="col-sm-6">Product Description</span>
+                <span class="col-sm-2">Cost Each</span>
+                <span class="col-sm-2">Cost</span>
+            </div>
+            <div class="panel-body">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <div class="col-sm-2">
+                            <input class="form-control" type="number">
+                        </div>
+                        <label class="col-sm-6">EC High Efficiency Fan Motors (Hubbed), 115V</label>
+                        <div class="col-sm-2">
+                            <div class="input-group">
+                                <span class="input-group-addon">$</span>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="input-group">
+                                <span class="input-group-addon">$</span>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <div class="col-sm-2">
+                            <input class="form-control" type="number">
+                        </div>
+                        <label class="col-sm-6">EC High Efficiency Fan Motors (Hubbed), 115V</label>
+                        <div class="col-sm-2">
+                            <div class="input-group">
+                                <span class="input-group-addon">$</span>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="input-group">
+                                <span class="input-group-addon">$</span>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <div class="col-sm-2">
+                            <input class="form-control" type="number">
+                        </div>
+                        <label class="col-sm-6">EC High Efficiency Fan Motors (Hubbed), 115V</label>
+                        <div class="col-sm-2">
+                            <div class="input-group">
+                                <span class="input-group-addon">$</span>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="input-group">
+                                <span class="input-group-addon">$</span>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <div class="col-sm-2">
+                            <input class="form-control" type="number">
+                        </div>
+                        <label class="col-sm-6">EC High Efficiency Fan Motors (Hubbed), 115V</label>
+                        <div class="col-sm-2">
+                            <div class="input-group">
+                                <span class="input-group-addon">$</span>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="input-group">
+                                <span class="input-group-addon">$</span>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <div class="col-sm-2">
+                            <input class="form-control" type="number">
+                        </div>
+                        <label class="col-sm-6">EC High Efficiency Fan Motors (Hubbed), 115V</label>
+                        <div class="col-sm-2">
+                            <div class="input-group">
+                                <span class="input-group-addon">$</span>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="input-group">
+                                <span class="input-group-addon">$</span>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <div class="col-sm-2">
+                            <input class="form-control" type="number">
+                        </div>
+                        <label class="col-sm-6">EC High Efficiency Fan Motors (Hubbed), 115V</label>
+                        <div class="col-sm-2">
+                            <div class="input-group">
+                                <span class="input-group-addon">$</span>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="input-group">
+                                <span class="input-group-addon">$</span>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label class="col-sm-2 col-sm-offset-8">Subtotal</label>
+                        <div class="col-sm-2">
+                            <div class="input-group">
+                                <span class="input-group-addon">$</span>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label class="col-sm-2 col-sm-offset-8">Tax</label>
+                        <div class="col-sm-2">
+                            <div class="input-group">
+                                <span class="input-group-addon">$</span>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label class="col-sm-2 col-sm-offset-8">Total</label>
+                        <div class="col-sm-2">
+                            <div class="input-group">
+                                <span class="input-group-addon">$</span>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="panel panel-default" style="margin-top: 25px">
+            <div class="panel-heading container-fluid">
+                Notes:
+            </div>
+            <div class="panel-body">
+                <form class="form-horizontal col-sm-6">
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">Total Project Cost</label>
+                        <div class="col-sm-6">
+                            <div class="input-group">
+                                <span class="input-group-addon">$</span>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">Rebates Will Cover</label>
+                        <div class="col-sm-6">
+                            <div class="input-group">
+                                <span class="input-group-addon">$</span>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">Customer Cost</label>
+                        <div class="col-sm-6">
+                            <div class="input-group">
+                                <span class="input-group-addon">$</span>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <form class="form-horizontal col-sm-6">
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">Customer Cost</label>
+                        <div class="col-sm-6">
+                            <div class="input-group">
+                                <span class="input-group-addon">$</span>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">Payback</label>
+                        <div class="col-sm-6">
+                            <div class="input-group">
+                                <span class="input-group-addon">$</span>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">5 Year ROI</label>
+                        <div class="col-sm-6">
+                            <div class="input-group">
+                                <span class="input-group-addon">$</span>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+</html>

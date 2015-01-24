@@ -10,7 +10,103 @@
 </head>
 
 <body>
+<!-- Navbar -->
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Power Down</a>
+        </div>
 
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="#">Order</a></li>
+                <li><a href="#">Quotes</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="admin.demo.html">Admin</a></li>
+                <li><a href="/logout">Logout</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
 
+<div class="container-fluid" style="margin-top: 50px">
+    <form>
+        <div class="row">
+            <div class="form-group col-sm-3">
+                <label>Date:</label>
+                <input type="date" class="form-control">
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-sm-3">
+                <label>Sales Rep</label>
+                <input type="text" class="form-control" placeholder="Sales Rep">
+            </div>
+            <div class="form-group col-sm-3">
+                <label>Install Date</label>
+                <input type="date" class="form-control">
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-sm-3">
+                <label>Customer Information</label>
+                <input type="text" class="form-control" placeholder="Customer Info">
+            </div>
+            <div class="form-group col-sm-3">
+                <label>Installer</label>
+                <select class="form-control" name="installer">
+                    <option value="installer1">Installer 1</option>
+                    <option value="installer2">Installer 2</option>
+                    <option value="installer3">Installer 3</option>
+                    <option value="installer4">Installer 4</option>
+                    <option value="installer5">Installer 5</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <h2>Products to Order</h2>
+        </div>
+        <div class="row">
+            <h3>Motors & Anti Sweat</h3>
+            <form class="form-horizontal">
+                <div class="col-sm-1">
+                    <input type="number" class="form-control" value="0">
+                </div>
+                <label class="control-label">EC85071 Wellington 1/15 hp, 1/20 hp, 1/30 hp, 230v CW and CCW</label>
+            </form>
+        </div>
+        <div class="row">
+            <h3>Cooler LED Tubes</h3>
+            <form class="form-horizontal">
+                <div class="col-sm-1">
+                    <input type="number" class="form-control" value="0">
+                </div>
+                <label class="control-label">EC85071 Wellington 1/15 hp, 1/20 hp, 1/30 hp, 230v CW and CCW</label>
+            </form>
+        </div>
+        <div class="row">
+            <h3>LED Products</h3>
+            <form class="form-horizontal">
+                <div class="col-sm-1">
+                    <input type="number" class="form-control" value="0">
+                </div>
+                <label class="control-label">EC85071 Wellington 1/15 hp, 1/20 hp, 1/30 hp, 230v CW and CCW</label>
+            </form>
+        </div>
+
+    </form>
+</div>
+
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
 </body>
 </html>

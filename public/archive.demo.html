@@ -3,32 +3,79 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Power Down Login</title>
+    <title>Power Down Quote Archive</title>
 
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-<div class="panel panel-default col-sm-4 col-sm-offset-4">
-    <div class="panel-body">
-        <form action="/login" method="post">
-            <img class="col-sm-12" src="images/logo.png">
-            <div class="form-group">
-                <label>E-Mail:</label>
-                <input type="text" class="form-control" name="username" />
-                <br/>
+<!-- Navbar -->
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Power Down</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="#">Order</a></li>
+                <li><a href="#">Quotes</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="admin.demo.html">Admin</a></li>
+                <li><a href="/logout">Logout</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<div class="container-fluid" style="margin-top: 70px">
+    <h2>Quote Archive</h2>
+    <div class="row">
+        <div class="well container col-sm-3">
+            <div class="">
+                Sales Rep: John Doe<br />
+                Company: ABC Corp<br />
+                Quote Date: 1/15/14<br />
             </div>
-            <div class="form-group">
-                <label>Password:</label>
-                <input type="password" class="form-control" name="password" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="well container col-sm-3">
+            <div class="">
+                Sales Rep: John Doe<br />
+                Company: ABC Corp<br />
+                Quote Date: 1/15/14<br />
             </div>
-            <div>
-                <button class="btn" type="submit" value="Submit">Submit</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="well container col-sm-3">
+            <div class="">
+                Sales Rep: John Doe<br />
+                Company: ABC Corp<br />
+                Quote Date: 1/15/14<br />
             </div>
-        </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="well container col-sm-3">
+            <div class="">
+                Sales Rep: John Doe<br />
+                Company: ABC Corp<br />
+                Quote Date: 1/15/14<br />
+            </div>
+        </div>
     </div>
 </div>
-
 </body>
 </html>
