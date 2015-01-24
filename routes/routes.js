@@ -6,9 +6,26 @@ module.exports = function(app, passport) {
     // =====================================
     app.get('/', isLoggedIn, function(req, res) {
 
-        // load the index.html file from protected directory
-        res.sendfile('./protected/index.html');
+        // load the index.demo.html file from protected directory
+        res.sendfile('./protected/index.demo.html');
     });
+
+    // =====================================
+    // SIGNUP ==============================
+    // =====================================
+    // show the signup form
+    app.get('/newuser', function(req, res) {
+
+        // render the page and pass in any flash data if it exists
+        res.sendfile('./protected/newuser.html');
+    });
+
+    // process the signup form
+    app.post('/newuser', passport.authenticate('local-signup', {
+        successRedirect : '/', // redirect to the index page
+        failureRedirect : '/signup' // redirect back to the signup page if there is an error
+    }));
+
 
     // =====================================
     // LOGIN ===============================
@@ -17,14 +34,13 @@ module.exports = function(app, passport) {
     app.get('/login', function(req, res) {
 
         // send login page from server views directory
-        res.sendfile('views/login.html');
+        res.sendfile('views/login.demo.html');
     });
 
     // process the login form
     app.post('/login', passport.authenticate('local-login', {
         successRedirect : '/profile', // redirect to the secure profile section
-        failureRedirect : '/login', // redirect back to the signup page if there is an error
-        failureFlash : true // allow flash messages
+        failureRedirect : '/login' // redirect back to the login page if there is an error
     }));
 
     // =====================================
@@ -50,6 +66,13 @@ module.exports = function(app, passport) {
         var reqPath = path.join(__dirname, './protected/javascript', req.path);
         res.sendfile(reqPath)
     })
+
+    // =====================================
+    // API CALLS TO DB =====================
+    // =====================================
+    app.get('/api/user', isLoggedIn, function(req, res) {});
+    app.get('/api/product', isLoggedIn, function(req, res) {});
+    app.get('/api/quote', isLoggedIn, function(req, res) {});
 };
 
 // route middleware to make sure a user is logged in

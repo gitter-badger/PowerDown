@@ -600,7 +600,7 @@ angular.module('ui.bootstrap.carousel', ['ui.bootstrap.transition'])
  *
  * @example
 <example module="ui.bootstrap">
-  <file name="index.html">
+  <file name="index.demo.html">
     <carousel>
       <slide>
         <img src="http://placekitten.com/150/150" style="margin:auto;">
@@ -652,7 +652,7 @@ angular.module('ui.bootstrap.carousel', ['ui.bootstrap.transition'])
  *
  * @example
 <example module="ui.bootstrap">
-  <file name="index.html">
+  <file name="index.demo.html">
 <div ng-controller="CarouselDemoCtrl">
   <carousel>
     <slide ng-repeat="slide in slides" active="slide.active">
@@ -3033,7 +3033,7 @@ angular.module('ui.bootstrap.tabs', [])
  *
  * @example
 <example module="ui.bootstrap">
-  <file name="index.html">
+  <file name="index.demo.html">
     <tabset>
       <tab heading="Tab 1"><b>First</b> Content!</tab>
       <tab heading="Tab 2"><i>Second</i> Content!</tab>
@@ -3082,7 +3082,7 @@ angular.module('ui.bootstrap.tabs', [])
  *
  * @example
 <example module="ui.bootstrap">
-  <file name="index.html">
+  <file name="index.demo.html">
     <div ng-controller="TabsDemoCtrl">
       <button class="btn btn-small" ng-click="items[0].active = true">
         Select item 1, using active binding
@@ -3133,7 +3133,7 @@ angular.module('ui.bootstrap.tabs', [])
  *
  * @example
 <example module="ui.bootstrap">
-  <file name="index.html">
+  <file name="index.demo.html">
     <tabset>
       <tab>
         <tab-heading><b>HTML</b> in my titles?!</tab-heading>
