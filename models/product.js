@@ -4,19 +4,11 @@ var mongoose = require('mongoose');
 
 // define the schema for our user model
 var productSchema = mongoose.Schema({
-
-    motors: [{
-
-    }],
-    antisweat: [{
-
-    }],
-    coolerled: [{
-
-    }],
-    ledlights: [{
-
-    }]
+    productname: String,
+    productprice: Number,
+    productestar: Boolean,
+    producttype: String,
+    productco: String,
 });
 
 // methods ======================
