@@ -1,0 +1,90 @@
+[
+  {
+    _id: "",
+    productname: "",
+    productprice: ,
+    productestar: false,
+    producttype: "Anti-Sweat",
+    productco: "National Resource Management, Inc (NRM)"
+  },
+  {
+    _id: "AB-STS-48C50100A-S",
+    productname: "STS series (Center Unit) STS SERIES: 48\", CLEAR, 5000K CCT, 100mA, ANGLED, CENTER",
+    productprice: 65.00,
+    productestar: false,
+    producttype: "Cooler LED",
+    productco: "American Bright"
+  },
+  {
+    _id: "AB-STS-48C50100AE-S",
+    productname: "STS series (End Unit) STS SERIES: 48\", CLEAR, 5000K CCT, 100mA, ANGLED, END",
+    productprice: 52.00,
+    productestar: false,
+    producttype: "Cooler LED",
+    productco: "American Bright"
+  },
+  {
+    _id: "AB-STT-48C50100A-S",
+    productname: "STT series (Center Unit) STT SERIES: 48\", CLEAR, 5000K CCT, 100mA, ANGLED, CENTER",
+    productprice: 80.00,
+    productestar: false,
+    producttype: "Cooler LED",
+    productco: "American Bright"
+  },
+  {
+    _id: "AB-STT-48C50100AE-S",
+    productname: "STT series (End Unit) STT SERIES: 48\", CLEAR, 5000K CCT, 100mA, ANGLED, END",
+    productprice: 65.00,
+    productestar: false,
+    producttype: "Cooler LED",
+    productco: "American Bright"
+  },
+  {
+    _id: "MEG142-15CW1075U",
+    productname: "1/5hp, 115v, 1ph, 60/50hz, 1075 RPM CW shaft end rotation 4\" shaft length with 1/2\" diameter, 2 pin Lyall type plug and ground wire. This motor can be mounted by the front, rear clamp bolts or by the belly",
+    productprice: 208.00,
+    productestar: false,
+    producttype: "Motors",
+    productco: "National Resource Management, Inc (NRM)"
+  },
+  {
+    _id: "MEG142-25CW1075U",
+    productname: "1/5hp, 208-230V, 1ph, 60/50hz, 1075 RPM CW shaft end rotation 4\" shaft length with 1/2\" diameter, 2 pin Lyall type plug and ground wire. This motor can be mounted by the rear clamp bolts or by the belly",
+    productprice: 208.00,
+    productestar: false,
+    producttype: "Motors",
+    productco: "National Resource Management, Inc (NRM)"
+  },
+  {
+    _id: "MEG142-15CC1075R",
+    productname: "1/5hp, 115v, 1ph, 60/50hz, 1075 RPM, counter clock-wise shaft end rotation 4\" shaft length with 1/2\" diameter, 2 pin Lyall type plug and ground wire. This motor can be mounted by the rear clamp bolts or by the belly",
+    productprice: 208.00,
+    productestar: false,
+    producttype: "Motors",
+    productco: "National Resource Management, Inc (NRM)"
+  },
+  {
+    _id: "MEG142-25CC1075R",
+    productname: "1/5hp, 208-230v, 1ph, 60/50hz, 1075 RPM, counter clock-wise shaft end rotation 4\" shaft length with 1/2\" diameter, 2 pin Lyall type plug and ground wire. This motor can be mounted by the rear clamp bolts or by the belly",
+    productprice: 208.00,
+    productestar: false,
+    producttype: "Motors",
+    productco: "National Resource Management, Inc (NRM)"
+  },
+  {
+    _id: "DDH-23B",
+    productname: "Our Anti Sweat Door Heater Control Kit is a dual output cooler / freezer controller which can handle up to 10 separate door heater circuits *with the use of additional DHRV2. The DDH-23B kit can handle 1 door heater circuit and includes 1- NRM Controller, 1- 12v transformer, The DDH-23B kit can handle 1 door heat",
+    productprice: 550.00,
+    productestar: false,
+    producttype: "Anti-Sweat",
+    productco: "National Resource Management, Inc (NRM)"
+  },
+  {
+    _id: "DM00001‐Kit",
+    productname: "Dual voltage, dual temperature, 120V & 240V operation; Includes one control, two sensors and power cord.",
+    productprice: 390.00,
+    productestar: false,
+    producttype: "Anti-Sweat",
+    productco: "SET"
+  }
+]
